@@ -1,0 +1,207 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #111, #000);
+  color: #f5f5f5;
+  scroll-behavior: smooth; /* Hace que el desplazamiento sea suave al usar anclas */
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(255, 255, 255, 0.09);/* Fondo semitransparente */
+  backdrop-filter: blur(15px);/* Efecto de vidrio */
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* Línea inferior sutil */
+}
+}
+
+.navbar-brand {
+  font-weight: 700; /* Texto en negrita */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.nav-link {
+  transition: 0.3s; /* Animación suave en cambios */
+}
+
+.nav-link:hover {
+  color: #aaa !important; /* Cambia color al pasar el mouse y el important 
+                             fuerza el estilo aunque Bootstrap quiera cambiarlo */
+}
+
+/* HERO */
+#inicio {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex; /* Activa flexbox */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.contenido-hero h1 {
+  font-size: 70px; /* Tamaño grande del título */
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contenido-hero p {
+  font-size: 18px;
+  color: #aaa; /* Color más tenue para jerarquía visual */
+}
+
+/* efecto glow sutil */
+.contenido-hero h1::after {
+  content: ""; /* Necesario para pseudo-elemento */
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 10px auto;
+  background: linear-gradient(to right, transparent, white, transparent); /* Línea decorativa */
+}
+
+/* Secciones */
+section {
+  padding: 100px 20px; /* Espaciado interno de cada sección */
+}
+
+/* Titulos */
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #aaa;
+  display: block;
+  margin: 10px auto;
+}
+
+/* TARJETAS */
+.card-custom {
+  background: rgba(255,255,255,0.03); /* Fondo transparente */
+  padding: 30px;
+  border-radius: 20px; /* Bordes redondeados */
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px); /* Efecto vidrio */
+  transition: 0.3s;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px); /* Se eleva al pasar el mouse */
+}
+
+/* CARRUSEL */
+.carousel-item img {
+  height: 420px; /* Altura fija */
+  object-fit: contain; /* Ajusta imagen sin recortarla */
+  background-color: black;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.03); /* Zoom sutil */
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.6); /* Fondo oscuro para texto */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* APTITUDES */
+ul {
+  list-style: none; /* Quita viñetas */
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+ul li:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(5px); /* Se mueve a la derecha */
+}
+
+/* CONTACTO */
+#contacto {
+  text-align: center;
+}
+
+#contacto a {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#contacto a:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.firma {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.descripcion {
+  color: #aaa;
+  margin: 15px 0;
+}
+
+.redes-footer a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.redes-footer a:hover {
+  color: white;
+}
+
+/* BOTON VOLVER */
+.volver {
+  display: inline-block;
+  margin: 20px 0;
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.volver:hover {
+  color: white;
+  transform: translateY(-3px); /* Codigo para efecto de elevar ligeramente el texto */
+}
+
+/* COPYRIGHT */
+.copy {
+  font-size: 12px;
+  color: #555;
+}

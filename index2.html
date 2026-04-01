@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio - Ángel</title>
+
+<!-- Pagina Bootstrap para estilos y diseño responsivo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fuente Poppins importada desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nombre y codigo DE CSS -->
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<!--Body con termino TOP para que el boton inferior te lleve al inicio--> 
+<body id="top"> 
+
+<!-- Barra de navegación que se queda fija arriba -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Nombre  del sitio -->
+    <a class="navbar-brand text-black" href="#">Ángel Matz</a>
+
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link text-black" href="#inicio">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="#sobreMi">Sobre mí</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="#proyectos">Proyectos</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="#especialidades">Aptitudes</a></li>
+      <li class="nav-item"><a class="nav-link text-black" href="#contacto">Contacto</a></li>
+      </ul>
+      </div>
+      </div>
+      </nav>
+
+<!-- HERO Nombre y oficio  -->
+<section id="inicio">
+  <div class="contenido-hero">
+    <h1>Ángel Matz</h1>
+    <p>Diseñador gráfico</p>
+    <p>Artista emergente</p>
+  </div>
+</section>
+
+<!-- Apartado SOBRE MI -->
+<section id="sobreMi" class="container">
+  <div class="card-custom">
+    <h2>Sobre mí</h2>
+    <p>
+      Actualmente soy estudiante en ITSON Campus Guaymas en la carrera de Diseño Gráfico.
+      Tengo diversos intereses dentro del diseño, explorando diferentes áreas creativas.
+      Me considero una persona abierta a nuevas ideas y proyectos.
+    </p>
+  </div>
+</section>
+
+<!-- Apartado Proyectos -->
+<section id="proyectos" class="container">
+  <h2>Proyectos</h2>
+
+  <!-- Sub apartado pinturas -->
+  <h3>Pinturas en acrílico</h3>
+  <div id="carouselPinturas" class="carousel slide" data-bs-ride="carousel">
+    
+  <div class="carousel-inner">
+
+  <div class="carousel-item active">
+        <img src="PinturaLuffyAcrilico.jpeg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Pintura en acrílico</h5>
+          <p>Inspirada en "El grito", versión One Piece.</p>
+  </div>
+  </div>
+
+  <div class="carousel-item">
+        <img src="PinturaOjoAcrilico.jpeg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Pintura en acrílico</h5>
+          <p>Cover inspirado en "Niky Arts".</p>
+        </div>
+      </div>
+
+  <div class="carousel-item">
+        <img src="PinturaLibelulaAcrilico.png" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Pintura en acrílico</h5>
+          <p>Par de libélulas en armonía con colores cálidos y fríos.</p>
+  </div>
+  </div>
+
+  </div>
+
+  <!-- Botón para ir a la imagen anterior -->
+    <button class="carousel-control-prev" type="button" 
+    data-bs-target="#carouselPinturas" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+   <!-- Botón para ir a la siguiente imagen -->
+    <button class="carousel-control-next" type="button" 
+    data-bs-target="#carouselPinturas" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+  <!-- Carrusel Ilustraciones -->
+  <h3 class="mt-5">Ilustraciones</h3>
+  <div id="carouselIlustraciones" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="DiscoVinilRockProgresivo.jpeg" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Ilustración / Portada</h5>
+          <p>Diseño inspirado en el rock progresivo con estética surrealista.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="LuffyDtfHodie.png" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Impresión DTF</h5>
+          <p>Imagen creada para estamparse en un hoodie.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="PictogramaYo.png" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Pictograma representativo</h5>
+          <p>Pictograma alusivo abstractamente a mi personalidad.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="LetteringDigital.png" class="d-block w-100">
+        <div class="carousel-caption">
+          <h5>Lettering</h5>
+          <p>Proyecto para una portada de un álbum.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Botones de sigueinte y anterior en carrusel  -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- Apartado Aptitudes -->
+<section id="especialidades" class="container">
+  <div class="card-custom">
+    <h2>Aptitudes</h2>
+    <ul>
+      <li>Ilustración digital</li>
+      <li>Videografía experimental</li>
+      <li>Diseño publicitario</li>
+      <li>Diseño editorial</li>
+      <li>Tipografía</li>
+      <li>Identidad visual</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Apartado contacto -->
+<section id="contacto">
+  <h2>Contacto</h2>
+
+  <p> <a href="https://www.facebook.com/angel.matz.940?locale=es_LA" target="_blank">Facebook</a> </p>
+
+  <p> <a href="https://www.instagram.com/anghelmatz/" target="_blank">Instagram</a> </p>
+
+  <p> <a href="https://wa.me/5216223189894" target="_blank">WhatsApp</a> </p>
+</section>
+
+<!-- Apartado Footer -->
+<footer>
+  <div class="footer-contenido">
+
+    <p class="firma">Diseñado por Ángel Matz</p>
+
+    <p class="descripcion">Ilustración, diseño digital y creatividad visual.</p>
+  <!-- Botones de enlaces para ir a mis redes en el footer -->
+  <div class="redes-footer">
+      <a href="https://www.facebook.com/angel.matz.940?locale=es_LA" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/anghelmatz/" target="_blank">Instagram              </a>
+      <a href="https://wa.me/5216223189894" target="_blank">WhatsApp                         </a>
+    </div>
+
+    <a href="#top" class="volver">↑↑ ¿Necesitas regresar? Da clic ↑↑</a>
+
+    <p class="copy">© 2026 Ángel Matz - Todos los derechos reservados </p>
+
+  </div>
+</footer>
+
+<!-- Script de Bootstrap que activa componentes interactivos como carrusel, menú y botones -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
